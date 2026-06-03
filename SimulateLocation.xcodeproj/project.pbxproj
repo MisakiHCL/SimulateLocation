@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000101 /* SimulateLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000201 /* SimulateLocationApp.swift */; };
+		000000000000000000000102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000202 /* ContentView.swift */; };
+		000000000000000000000103 /* GPXGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000203 /* GPXGenerator.swift */; };
+		000000000000000000000104 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000204 /* Localizable.strings */; };
+		000000000000000000000108 /* ExportFileNameFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000212 /* ExportFileNameFormatter.swift */; };
+		000000000000000000000109 /* CurrentLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000213 /* CurrentLocationProvider.swift */; };
+		000000000000000000000110 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000214 /* InfoPlist.strings */; };
+		000000000000000000000112 /* InteractiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000218 /* InteractiveMapView.swift */; };
+		000000000000000000000114 /* BridgeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000220 /* BridgeClient.swift */; };
+		000000000000000000000115 /* BridgeServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000221 /* BridgeServiceBrowser.swift */; };
+		000000000000000000000118 /* CoordinateSystemConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000225 /* CoordinateSystemConverter.swift */; };
+		000000000000000000000119 /* SelectedMapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000226 /* SelectedMapLocation.swift */; };
+		000000000000000000000120 /* StartupLocationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000227 /* StartupLocationPolicy.swift */; };
+		100000000000000000000101 /* MenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000201 /* MenuBarApp.swift */; };
+		100000000000000000000102 /* MenuBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* MenuBarContentView.swift */; };
+		100000000000000000000103 /* BridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000203 /* BridgeController.swift */; };
+		100000000000000000000104 /* BridgePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000204 /* BridgePaths.swift */; };
+		100000000000000000000105 /* BridgeProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000205 /* BridgeProcessRunner.swift */; };
+		100000000000000000000106 /* BridgePortResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000206 /* BridgePortResolver.swift */; };
+		100000000000000000000107 /* NativeDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000207 /* NativeDialogs.swift */; };
+		100000000000000000000108 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000210 /* Localizable.strings */; };
+		A4B9C1922FCFDA7000C3D0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B9C1932FCFDA7000C3D0A9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000201 /* SimulateLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateLocationApp.swift; sourceTree = "<group>"; };
+		000000000000000000000202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000203 /* GPXGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXGenerator.swift; sourceTree = "<group>"; };
+		000000000000000000000207 /* SimulateLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimulateLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		000000000000000000000210 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		000000000000000000000212 /* ExportFileNameFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportFileNameFormatter.swift; sourceTree = "<group>"; };
+		000000000000000000000213 /* CurrentLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationProvider.swift; sourceTree = "<group>"; };
+		000000000000000000000215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		000000000000000000000216 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		000000000000000000000218 /* InteractiveMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveMapView.swift; sourceTree = "<group>"; };
+		000000000000000000000220 /* BridgeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeClient.swift; sourceTree = "<group>"; };
+		000000000000000000000221 /* BridgeServiceBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeServiceBrowser.swift; sourceTree = "<group>"; };
+		000000000000000000000222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000225 /* CoordinateSystemConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSystemConverter.swift; sourceTree = "<group>"; };
+		000000000000000000000226 /* SelectedMapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMapLocation.swift; sourceTree = "<group>"; };
+		000000000000000000000227 /* StartupLocationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupLocationPolicy.swift; sourceTree = "<group>"; };
+		100000000000000000000201 /* MenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarApp.swift; sourceTree = "<group>"; };
+		100000000000000000000202 /* MenuBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000203 /* BridgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeController.swift; sourceTree = "<group>"; };
+		100000000000000000000204 /* BridgePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePaths.swift; sourceTree = "<group>"; };
+		100000000000000000000205 /* BridgeProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeProcessRunner.swift; sourceTree = "<group>"; };
+		100000000000000000000206 /* BridgePortResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePortResolver.swift; sourceTree = "<group>"; };
+		100000000000000000000207 /* NativeDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeDialogs.swift; sourceTree = "<group>"; };
+		100000000000000000000208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100000000000000000000209 /* SimulateLocationMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimulateLocationMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		100000000000000000000212 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A4B9C1912FCFDA7000C3D0A9 /* SelectedLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Generated/SelectedLocation.gpx; sourceTree = "<group>"; };
+		A4B9C1932FCFDA7000C3D0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000701 = {
+			isa = PBXGroup;
+			children = (
+				A4B9C1912FCFDA7000C3D0A9 /* SelectedLocation.gpx */,
+				000000000000000000000702 /* SimulateLocation */,
+				100000000000000000000702 /* SimulateLocationMenuBar */,
+				000000000000000000000704 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000702 /* SimulateLocation */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000201 /* SimulateLocationApp.swift */,
+				000000000000000000000202 /* ContentView.swift */,
+				000000000000000000000203 /* GPXGenerator.swift */,
+				000000000000000000000212 /* ExportFileNameFormatter.swift */,
+				000000000000000000000213 /* CurrentLocationProvider.swift */,
+				000000000000000000000218 /* InteractiveMapView.swift */,
+				000000000000000000000220 /* BridgeClient.swift */,
+				000000000000000000000221 /* BridgeServiceBrowser.swift */,
+				000000000000000000000225 /* CoordinateSystemConverter.swift */,
+				000000000000000000000226 /* SelectedMapLocation.swift */,
+				000000000000000000000227 /* StartupLocationPolicy.swift */,
+				000000000000000000000222 /* Info.plist */,
+				A4B9C1932FCFDA7000C3D0A9 /* Assets.xcassets */,
+				000000000000000000000204 /* Localizable.strings */,
+				000000000000000000000214 /* InfoPlist.strings */,
+			);
+			path = SimulateLocation;
+			sourceTree = "<group>";
+		};
+		000000000000000000000704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000207 /* SimulateLocation.app */,
+				100000000000000000000209 /* SimulateLocationMenuBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000702 /* SimulateLocationMenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000201 /* MenuBarApp.swift */,
+				100000000000000000000202 /* MenuBarContentView.swift */,
+				100000000000000000000203 /* BridgeController.swift */,
+				100000000000000000000204 /* BridgePaths.swift */,
+				100000000000000000000205 /* BridgeProcessRunner.swift */,
+				100000000000000000000206 /* BridgePortResolver.swift */,
+				100000000000000000000207 /* NativeDialogs.swift */,
+				100000000000000000000208 /* Info.plist */,
+				100000000000000000000210 /* Localizable.strings */,
+			);
+			path = SimulateLocationMenuBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000501 /* SimulateLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000801 /* Build configuration list for PBXNativeTarget "SimulateLocation" */;
+			buildPhases = (
+				000000000000000000000901 /* Sources */,
+				000000000000000000000601 /* Frameworks */,
+				000000000000000000000902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulateLocation;
+			productName = SimulateLocation;
+			productReference = 000000000000000000000207 /* SimulateLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000501 /* SimulateLocationMenuBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000801 /* Build configuration list for PBXNativeTarget "SimulateLocationMenuBar" */;
+			buildPhases = (
+				100000000000000000000901 /* Sources */,
+				100000000000000000000601 /* Frameworks */,
+				100000000000000000000902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulateLocationMenuBar;
+			productName = SimulateLocationMenuBar;
+			productReference = 100000000000000000000209 /* SimulateLocationMenuBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					000000000000000000000501 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					100000000000000000000501 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000803 /* Build configuration list for PBXProject "SimulateLocation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 000000000000000000000701;
+			productRefGroup = 000000000000000000000704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000501 /* SimulateLocation */,
+				100000000000000000000501 /* SimulateLocationMenuBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000104 /* Localizable.strings in Resources */,
+				000000000000000000000110 /* InfoPlist.strings in Resources */,
+				A4B9C1922FCFDA7000C3D0A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000108 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000101 /* SimulateLocationApp.swift in Sources */,
+				000000000000000000000102 /* ContentView.swift in Sources */,
+				000000000000000000000103 /* GPXGenerator.swift in Sources */,
+				000000000000000000000108 /* ExportFileNameFormatter.swift in Sources */,
+				000000000000000000000109 /* CurrentLocationProvider.swift in Sources */,
+				000000000000000000000112 /* InteractiveMapView.swift in Sources */,
+				000000000000000000000114 /* BridgeClient.swift in Sources */,
+				000000000000000000000115 /* BridgeServiceBrowser.swift in Sources */,
+				000000000000000000000118 /* CoordinateSystemConverter.swift in Sources */,
+				000000000000000000000119 /* SelectedMapLocation.swift in Sources */,
+				000000000000000000000120 /* StartupLocationPolicy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101 /* MenuBarApp.swift in Sources */,
+				100000000000000000000102 /* MenuBarContentView.swift in Sources */,
+				100000000000000000000103 /* BridgeController.swift in Sources */,
+				100000000000000000000104 /* BridgePaths.swift in Sources */,
+				100000000000000000000105 /* BridgeProcessRunner.swift in Sources */,
+				100000000000000000000106 /* BridgePortResolver.swift in Sources */,
+				100000000000000000000107 /* NativeDialogs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000000000000000000000204 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000000000000000000000209 /* Base */,
+				000000000000000000000210 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		000000000000000000000214 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000000000000000000000215 /* Base */,
+				000000000000000000000216 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		100000000000000000000210 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100000000000000000000211 /* Base */,
+				100000000000000000000212 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000001001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000001002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000000000000001003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SimulateLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.SimulateLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000001004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SimulateLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.SimulateLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		100000000000000000001003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SimulateLocationMenuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.SimulateLocation.MenuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SIMULATE_LOCATION_PROJECT_ROOT = "$(SRCROOT)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000001004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SimulateLocationMenuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.SimulateLocation.MenuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SIMULATE_LOCATION_PROJECT_ROOT = "$(SRCROOT)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000801 /* Build configuration list for PBXNativeTarget "SimulateLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000001003 /* Debug */,
+				000000000000000000001004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000801 /* Build configuration list for PBXNativeTarget "SimulateLocationMenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000001003 /* Debug */,
+				100000000000000000001004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000803 /* Build configuration list for PBXProject "SimulateLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000001001 /* Debug */,
+				000000000000000000001002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000401 /* Project object */;
+}

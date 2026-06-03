@@ -1,0 +1,2 @@
+"NSLocationWhenInUseUsageDescription" = "需要定位权限来把地图移动到你当前所在的位置。";
+"NSLocalNetworkUsageDescription" = "需要局域网权限来查找 Mac bridge，并由它写入和应用 GPX 文件。";

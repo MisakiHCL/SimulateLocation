@@ -1,0 +1,2 @@
+"NSLocationWhenInUseUsageDescription" = "Location permission is used to center the map on your current position.";
+"NSLocalNetworkUsageDescription" = "Local network access is used to find the Mac bridge that writes and applies GPX files.";
