@@ -30,10 +30,20 @@ SimulateLocation 由一个 iOS App 和一个 Mac bridge 组成。iPhone App 负�
 
 推荐的菜单栏流程：
 
-1. 用 Xcode 打开 `SimulateLocation.xcodeproj`。
-2. 选择 `SimulateLocationMenuBar` scheme，并在 **My Mac** 上运行。
+1. 构建菜单栏 App：
+
+   ```bash
+   ./Scripts/build-menu-bar-app
+   ```
+
+2. 打开构建后的 App：
+
+   ```bash
+   open Build/SimulateLocationMenuBar.app
+   ```
+
 3. 在菜单栏中点击 **启动**。它会启动 `Scripts/location-bridge` 并打开当前 Xcode 项目。
-4. 切换到 `SimulateLocation` scheme，并选择你的 iPhone 作为运行设备。
+4. 在 Xcode 中选择 `SimulateLocation` scheme，并选择你的 iPhone 作为运行设备。
 5. 在 `Signing & Capabilities` 中配置你的开发者 Team。
 6. 运行 iPhone App。
 7. iPhone 弹出权限时，允许本地网络访问。
@@ -65,6 +75,8 @@ SimulateLocation 由一个 iOS App 和一个 Mac bridge 组成。iPhone App 负�
 - **退出**：先停止当前 bridge，再退出菜单栏 App。
 
 菜单会显示当前 bridge 状态。如果默认端口上运行的是旧的 SimulateLocation bridge，会自动停止旧进程并复用端口。如果端口被其他进程占用，控制器会询问是否强制关闭或改用下一个可用端口。退出控制器不会强制关闭 Xcode。
+
+`Scripts/build-menu-bar-app` 会创建 `Build/SimulateLocationMenuBar.app`。`Build/` 是本地构建输出，不纳入 Git。
 
 ## Mac Bridge
 

@@ -1,0 +1,55 @@
+#!/usr/bin/python3
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+PROJECT_PATH = ROOT_DIR / "SimulateLocation.xcodeproj"
+SCHEME_NAME = "SimulateLocationMenuBar"
+APP_NAME = "SimulateLocationMenuBar.app"
+CONFIGURATION = os.environ.get("CONFIGURATION", "Release")
+BUILD_ROOT = ROOT_DIR / "Build"
+DERIVED_DATA_DIR = BUILD_ROOT / "DerivedData"
+PRODUCT_APP = DERIVED_DATA_DIR / "Build" / "Products" / CONFIGURATION / APP_NAME
+OUTPUT_APP = ROOT_DIR / "Build/SimulateLocationMenuBar.app"
+
+
+def main() -> int:
+    BUILD_ROOT.mkdir(parents=True, exist_ok=True)
+
+    subprocess.run(
+        [
+            "xcodebuild",
+            "-quiet",
+            "-project",
+            str(PROJECT_PATH),
+            "-scheme",
+            SCHEME_NAME,
+            "-sdk",
+            "macosx",
+            "-configuration",
+            CONFIGURATION,
+            "-derivedDataPath",
+            str(DERIVED_DATA_DIR),
+            "build",
+        ],
+        check=True,
+    )
+
+    if not PRODUCT_APP.is_dir():
+        print(f"Built app not found: {PRODUCT_APP}", file=sys.stderr)
+        return 1
+
+    if OUTPUT_APP.exists():
+        shutil.rmtree(OUTPUT_APP)
+
+    subprocess.run(["/usr/bin/ditto", str(PRODUCT_APP), str(OUTPUT_APP)], check=True)
+    print(f"Built {OUTPUT_APP}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

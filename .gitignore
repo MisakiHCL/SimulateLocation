@@ -8,6 +8,9 @@ xcuserdata/
 # Swift Package Manager
 .build/
 
+# Local packaged builds
+Build/
+
 # Python
 __pycache__/
 *.py[cod]

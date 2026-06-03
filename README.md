@@ -30,10 +30,20 @@ SimulateLocation is an iOS companion app plus a small Mac bridge. The iPhone app
 
 Recommended menu bar flow:
 
-1. Open `SimulateLocation.xcodeproj` in Xcode.
-2. Select the `SimulateLocationMenuBar` scheme and run it on **My Mac**.
+1. Build the menu bar app:
+
+   ```bash
+   ./Scripts/build-menu-bar-app
+   ```
+
+2. Open the built app:
+
+   ```bash
+   open Build/SimulateLocationMenuBar.app
+   ```
+
 3. From the menu bar item, choose **Start**. This starts `Scripts/location-bridge` and opens the Xcode project.
-4. Select the `SimulateLocation` scheme and choose your iPhone as the run destination.
+4. In Xcode, select the `SimulateLocation` scheme and choose your iPhone as the run destination.
 5. Configure your development team in `Signing & Capabilities`.
 6. Run the iPhone app.
 7. Allow Local Network access on the iPhone when prompted.
@@ -65,6 +75,8 @@ The `SimulateLocationMenuBar` macOS target provides three actions:
 - **Quit**: stops the active bridge, then exits the menu bar app.
 
 The menu also shows the current bridge status. If the default port is already used by an old SimulateLocation bridge, it is stopped automatically. If another process owns the port, the controller asks whether to force close it or use the next available port. Quitting the controller does not force-quit Xcode.
+
+`Scripts/build-menu-bar-app` creates `Build/SimulateLocationMenuBar.app`. The `Build/` directory is local output and is not tracked by Git.
 
 ## Mac Bridge
 
